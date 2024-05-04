@@ -10,7 +10,7 @@ from ml.data import process_data
 # Optional: implement hyperparameter tuning.
 def train_model(X_train: np.array, y_train: np.array) -> RandomForestClassifier:
 
-    model = RandomForestClassifier(n_estimators = 200)
+    model = RandomForestClassifier(n_estimators = 120, random_state = 52)
     model.fit(X_train, y_train)
     return model
 
